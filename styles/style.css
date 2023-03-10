@@ -291,6 +291,7 @@
 }
 
 .footer {
+  display: flex;
   color: white;
   min-height: 350px;
   background-color: #000000;
@@ -300,7 +301,9 @@
   display: flex;
   width: 90%;
   justify-content: space-between;
-  margin: 60px auto 40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin: 0 auto;
 }
 
 .footer__column_content_copyright {
@@ -312,7 +315,7 @@
 
 .logo_place_footer {
   width: 183px;
-  height: 35px;
+  height: 37px;
   background-image: url(../images/logo_place_footer.png);
 }
 
@@ -340,6 +343,7 @@
 
 .footer__column-link {
   text-decoration: none;
+  color: white;
   padding: 0;
   line-height: 30px;
   font-size: 18px;
