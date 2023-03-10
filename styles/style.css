@@ -1,8 +1,8 @@
-/* * {
+* {
   border: 1px solid red;
-} */
+}
 
-p {
+.p {
   margin: 0;
   padding: 0;
 }
@@ -61,6 +61,11 @@ p {
   font-weight: normal;
 }
 
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
 .header__main-illustration {
   position: absolute;
   bottom: 0px;
@@ -81,6 +86,7 @@ p {
 
 .description {
   display: flex;
+  background-color: #f2f2f2;
   flex-direction: column;
   justify-content: space-between;
   margin: 100px auto;
@@ -124,9 +130,11 @@ p {
 }
 
 .digits {
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 100px auto 100px;
 }
 
 .section-title {
@@ -155,17 +163,18 @@ p {
   display: flex;
   width: 1100px;
   margin: 0 auto 100px;
+  padding: 0;
   list-style: none;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.cell {
+.table__cell {
   width: 250px;
   margin: 0 0 60px;
 }
 
-.heading {
+.table__heading {
   margin: 0 0 20px;
 
   line-height: 1.15;
@@ -173,7 +182,7 @@ p {
   font-weight: bold;
 }
 
-.text {
+.table__text {
   margin: 20px 0 0;
 
   line-height: 1.15;
@@ -181,16 +190,106 @@ p {
   font-weight: normal;
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.feynman {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 790px;
+  background-color: #f2f2f2;
+}
+
+.feynman__title {
+  width: 775px;
+  margin: 100px auto 70px;
+  text-align: center;
+
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.feynman__subtitle {
+  margin: 0 auto;
+
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 2;
+}
+
+.feynman__link {
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+
+  line-height: 51px;
+  font-size: 36px;
+  color: #2f80ed;
+  text-decoration: none;
+  font-weight: normal;
+  z-index: 2;
+}
+
+.feynman__image {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(../images/feynman.png);
+}
+
+.kaufman {
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.kaufman__triangle {
+  width: 660px;
+  height: 636px;
+  position: absolute;
+  right: -124px;
+  top: 0px;
+  background-image: url(../images/kaufman-triangle.svg);
+}
+
+.section-title_theme_dark {
+  color: white;
+  text-align: center;
+  margin: 90px auto 20px;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+  margin-bottom: 0;
+}
+
+.table_theme_dark {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 200px;
+  height: fit-content;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  margin-bottom: 0;
+  z-index: 2;
+
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.table__text_theme_dark {
+  margin: 0;
 }
